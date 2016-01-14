@@ -1,0 +1,50 @@
+
+# SEO settings
+title: 南淮毛毛的练功房
+description: "不积跬步无以至千里"
+keywords: ""
+url: "http://maomaoliu.github.io"
+baseurl: "/blog"
+
+repo: hettps://github.com/maomaoliu/blog
+disqus_shortname: "maomaoliu"
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+paginate: 4
+paginate_path: "/page/:num/"
+comments: true
+
+# Sass configuration
+sass:
+#  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : maomaoliu
+  job      : Software Engineer
+  thumb    : /images/author.png
+  email    : yacht2005@gmail.com
+  github   : http://github.com/maomaoliu
+
+# social settings
+og_locale: "zh_CN"
+
+gems:
+  - bourbon
+  - jekyll
+  - jekyll-paginate
+  - pygments.rb
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
